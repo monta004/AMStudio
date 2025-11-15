@@ -1,0 +1,44 @@
+/* Questo file CSS globale viene importato in +layout.svelte
+  e si applica a tutta l'applicazione.
+*/
+
+/* Importa il font Inter da Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* Reset di base e stili globali */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  /* Stile di sfondo coerente con i tuoi componenti */
+  background-color: #f8fafc; 
+  color: #1f2937;
+  line-height: 1.5;
+}
+
+/* Stili di base per link e bottoni per coerenza */
+a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+}
