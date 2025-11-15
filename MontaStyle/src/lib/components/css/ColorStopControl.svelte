@@ -1,7 +1,6 @@
 <!-- src/lib/components/css/ColorStopControls.svelte -->
 <script lang="ts">
-	import type { ColorStop } from './types.ts';
-	import type { ColorSource } from '$lib/template/types';
+	import type { ColorStop, ColorSource } from './types.ts';
 	import Slider from '$lib/components/shared/Slider.svelte';
 	import SharedColorControls from '$lib/components/shared/SharedColorControls.svelte';
 

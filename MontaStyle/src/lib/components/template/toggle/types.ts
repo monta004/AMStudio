@@ -1,4 +1,4 @@
-// --- TIPI PER SLIDER ---
+//TIPI PER SLIDER
 export interface SliderProps {
 	label: string;
 	value: number;
@@ -17,7 +17,7 @@ export interface SharedColorControlsProps {
 	paletteColor: string;
 	customColor: string;
 	updateColor: (source: ColorSource, palette: string, custom: string) => void;
-	label?: string; // Aggiunto per chiarezza
+	label?: string;
 }
 
 //TIPI PER TABS
@@ -31,29 +31,27 @@ export interface TabsProps {
 	activeTab: string;
 }
 
-// --- NUOVI TIPI PER TOGGLE BUTTON ---
-
-// Stato per il generatore di Toggle
+// Stato Toggle
 export interface ToggleState {
 	// Dimensioni
 	width: number;
 	height: number;
 	thumbSize: number;
 	borderRadius: number;
-	thumbBorderRadius: number; // Aggiunto come richiesto
+	thumbBorderRadius: number;
 	transitionDuration: number;
 
-	// Colore 1: Track (Spento)
+	//Track (Spento)
 	sourceTrackOff: ColorSource;
 	paletteColorTrackOff: string;
 	customColorTrackOff: string;
 
-	// Colore 2: Track (Acceso)
+	//Track (Acceso)
 	sourceTrackOn: ColorSource;
 	paletteColorTrackOn: string;
 	customColorTrackOn: string;
 
-	// Colore 3: Pollice (Thumb)
+	//Pollice (Thumb)
 	sourceThumb: ColorSource;
 	paletteColorThumb: string;
 	customColorThumb: string;

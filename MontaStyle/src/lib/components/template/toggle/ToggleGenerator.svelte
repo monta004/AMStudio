@@ -14,7 +14,7 @@
 		height: 32,
 		thumbSize: 26,
 		borderRadius: 30,
-		thumbBorderRadius: 26, // Aggiunto
+		thumbBorderRadius: 26,
 		transitionDuration: 0.3,
 
 		sourceTrackOff: 'custom',
@@ -69,7 +69,7 @@
 			`--track-color-on: ${trackOnColor};`,
 			`--thumb-color: ${thumbColor};`,
 			`--thumb-size: ${toggleState.thumbSize}px;`,
-			`--thumb-border-radius: ${toggleState.thumbBorderRadius}px;`, // Aggiunto
+			`--thumb-border-radius: ${toggleState.thumbBorderRadius}px;`,
 			`--thumb-offset: ${thumbOffset.toFixed(2)}px;`,
 			`--thumb-translate-x: ${thumbTranslateX.toFixed(2)}px;`
 		].join(' ');
@@ -99,7 +99,7 @@
 
   /* Calcoli interni */
   --thumb-size: ${toggleState.thumbSize}px;
-  --thumb-border-radius: ${toggleState.thumbBorderRadius}px; /* Aggiunto */
+  --thumb-border-radius: ${toggleState.thumbBorderRadius}px;
   --thumb-offset: ${thumbOffset.toFixed(2)}px;
   --thumb-translate-x: ${thumbTranslateX.toFixed(2)}px;
 }
@@ -137,7 +137,7 @@
   left: var(--thumb-offset);
   bottom: var(--thumb-offset);
   background-color: var(--thumb-color);
-  border-radius: var(--thumb-border-radius); /* Modificato */
+  border-radius: var(--thumb-border-radius);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all var(--toggle-transition) ease;
 }

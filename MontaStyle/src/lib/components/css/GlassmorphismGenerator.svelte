@@ -11,7 +11,7 @@
 
 	let { state = $bindable() }: Props = $props();
 
-	// Funzione helper per legare i valori di SharedColorControls
+	// Funzione per legare i valori di SharedColorControls
 	function updateColor(source: 'palette' | 'custom', palette: string, custom: string) {
 		state.source = source;
 		state.paletteColor = palette;

@@ -1,14 +1,10 @@
 <script lang="ts">
 	import type { ToggleControlsProps, ColorSource } from './types.ts';
 
-	// Componenti condivisi importati
 	import Slider from '$lib/components/shared/Slider.svelte';
 	import SharedColorControls from '$lib/components/shared/SharedColorControls.svelte';
 
 	let { state = $bindable() }: ToggleControlsProps = $props();
-
-	// --- Funzioni Helper per SharedColorControls ---
-	// (richieste perché SharedColorControls usa la prop 'updateColor' e non 'bind:')
 
 	function updateTrackOff(source: ColorSource, palette: string, custom: string) {
 		state.sourceTrackOff = source;
@@ -79,7 +75,6 @@
 				step={1}
 				unit="px"
 			/>
-			<!-- Aggiunto slider per bordo pollice -->
 			<Slider
 				label="Bordo Pollice"
 				bind:value={state.thumbBorderRadius}
@@ -108,7 +103,6 @@
 </div>
 
 <style>
-	/* Stili copiati da ShadowGenerator per coerenza */
 	.toggle-controls {
 		display: flex;
 		flex-direction: column;

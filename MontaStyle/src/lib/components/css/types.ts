@@ -1,6 +1,7 @@
-import type { ColorSource } from '$lib/template/types';
 
-// Un singolo "stop" di colore per il gradiente
+export type ColorSource = 'palette' | 'custom';
+
+//singolo stop di colore per il gradiente
 export interface ColorStop {
 	id: string;
 	source: ColorSource;
@@ -28,7 +29,7 @@ export interface GlassState {
 	customColor: string;
 }
 
-// Stato per il generatore di ombre (aggiunto per completezza)
+// Stato per il generatore di ombre
 export interface ShadowState {
 	offsetX: number;
 	offsetY: number;

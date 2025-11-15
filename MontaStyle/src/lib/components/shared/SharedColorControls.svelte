@@ -1,4 +1,4 @@
-<!-- src/lib/components/css-generator/SharedColorControls.svelte -->
+<!-- src/lib/components/shared/SharedColorControls.svelte -->
 <script lang="ts">
 	import type { SharedColorControlsProps } from './types';
 	import { derivedPalette } from '$lib/state/paletteState.svelte.ts';

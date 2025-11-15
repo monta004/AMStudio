@@ -5,7 +5,7 @@
 
 	let { state = $bindable() }: ButtonControlsProps = $props();
 
-	// --- Funzioni per SharedColorControls ---
+	//Funzioni per SharedColorControls
 	function updateBg(source: ColorSource, palette: string, custom: string) {
 		state.sourceBg = source;
 		state.paletteColorBg = palette;
@@ -183,7 +183,6 @@
 </div>
 
 <style>
-	/* Stili copiati da ToggleControls per coerenza */
 	.button-controls {
 		display: flex;
 		flex-direction: column;

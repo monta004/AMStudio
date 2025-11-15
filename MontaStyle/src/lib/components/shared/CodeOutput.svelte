@@ -1,4 +1,4 @@
-<!-- CodeOutput.svelte -->
+<!-- src/lib/components/shared/CodeOutput.svelte -->
 <script lang="ts">
 
     let { 
@@ -9,7 +9,7 @@
       cssCode: string 
     } = $props();
   
-    // Stato per i tab e il pulsante "copia"
+    // Stato per i tab e il pulsante copia
     let activeTab: 'html' | 'css' = $state('html');
     let copied = $state(false);
     let copyTimeout: any = null;
