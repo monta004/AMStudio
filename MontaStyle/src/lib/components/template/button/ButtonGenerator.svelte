@@ -168,7 +168,6 @@
 </div>
 
 <style>
-	/* Stili copiati da ToggleButtonGenerator per coerenza */
 	.generator-wrapper {
 		background: #ffffff;
 		border-radius: 16px;

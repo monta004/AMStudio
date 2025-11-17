@@ -3,10 +3,6 @@
 	let { cssVariables, text }: ButtonViewProps = $props();
 </script>
 
-<!-- 
-  Questo contenitore riceve le variabili CSS dal genitore 
-  e le applica ai componenti figli (il bottone) 
--->
 <div class="button-view-wrapper" style={cssVariables}>
 	<button class="generated-btn">
 		{text}
@@ -14,9 +10,7 @@
 </div>
 
 <style>
-	/* Questo CSS è una copia di quello generato.
-    Usa le variabili CSS fornite dal genitore.
-  */
+
 	.generated-btn {
 		/* Contenuto e Font */
 		font-size: var(--btn-font-size);
